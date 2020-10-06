@@ -1,0 +1,15 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: HELLO ARE YOU
+      uses: actions/setup-node@v1
+    - run: npm install
+
