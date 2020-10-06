@@ -1,14 +1,14 @@
-# This workflow will build a docker container, publish it to Google Container Registry, and deploy it to GKE when a release is created
-#
-# To configure this workflow:
-#
-# 1. Ensure that your repository contains the necessary configuration for your Google Kubernetes Engine cluster, including deployment.yml, kustomization.yml, service.yml, etc.
-#
-# 2. Set up secrets in your workspace: GKE_PROJECT with the name of the project and GKE_SA_KEY with the Base64 encoded JSON service account key (https://github.com/GoogleCloudPlatform/github-actions/tree/docs/service-account-key/setup-gcloud#inputs).
-#
-# 3. Change the values for the GKE_ZONE, GKE_CLUSTER, IMAGE, and DEPLOYMENT_NAME environment variables (below).
-#
-# For more support on how to run the workflow, please visit https://github.com/GoogleCloudPlatform/github-actions/tree/master/example-workflows/gke
+＃此工作流程將構建docker容器，將其發佈到Google Container Registry，並在創建發行版時將其部署到GKE
+＃
+＃要配置此工作流程：
+＃
+＃1.確保您的存儲庫包含Google Kubernetes Engine集群的必要配置，包括deployment.yml，kustomization.yml，service.yml等。
+＃
+＃2.在工作區中設置機密：使用項目名稱的GKE_PROJECT和使用Base64編碼的JSON服務帳戶密鑰的GKE_SA_KEY（https://github.com/GoogleCloudPlatform/github-actions/tree/docs/service-account-鍵/ setup-gcloud＃inputs）。
+＃
+＃3.更改GKE_ZONE，GKE_CLUSTER，IMAGE和DEPLOYMENT_NAME環境變量的值（如下）。
+＃
+＃有關如何運行工作流程的更多支持，請訪問https://github.com/GoogleCloudPlatform/github-actions/tree/master/example-workflows/gke
 
 name: Build and Deploy to GKE
 
@@ -17,7 +17,7 @@ on:
     types: [created]
 
 env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
+  PROJECT_ID:my-project-20200819-286908
   GKE_CLUSTER: cluster-1    # TODO: update to cluster name
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
