@@ -4,11 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: abcd
-        uses: actions/checkout@v2
-      - name: abcd
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
