@@ -12,5 +12,5 @@ jobs:
     - name: HELLO ARE YOU
       uses: actions/setup-node@v1
     - run: npm install
-    - run: npm run build --if-present
+    - run: npm run build
     - run: npm test
