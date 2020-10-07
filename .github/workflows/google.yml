@@ -4,13 +4,6 @@ on:
    release:
      types: [created]
 
-env:
-  PROJECT_ID:my-project-20200819-286908
-  GKE_CLUSTER:cluster-1
-  GKE_ZONE:us-central1-c
-  DEPLOYMENT_NAME:gke-test
-  IMAGE:static-site
-
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
