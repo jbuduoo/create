@@ -13,5 +13,7 @@ jobs:
     - name: HELLO ARE YOU
       uses: actions/setup-node@v1
     - run: npm install
+    - name: Yarn CLI
+      uses: CultureHQ/actions-yarn@v1.0.1
     - run: npm install cypress --save-dev
-    - run: ./node_modules/.bin/cypress open
+    - run: yarn cypress:run --reporter=spec
