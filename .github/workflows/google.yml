@@ -10,8 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: HELLO ARE YOU
-      uses: actions/setup-node@v1
+    - uses: actions/setup-node@v1
     - run: npm install
     - uses: CultureHQ/actions-yarn@v1.0.1
     - run: npm install cypress --save-dev
