@@ -1,8 +1,8 @@
 name: Build and Deploy to GKE
 
 on:
-  release:
-    types: [created]
+   release:
+     types: [created]
 
 env:
   PROJECT_ID:my-project-20200819-286908
